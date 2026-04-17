@@ -12,6 +12,12 @@ I build practical tools across Python, Linux automation, web apps, and desktop w
 - Audio and device workflow automation
 - Data and service integration projects
 
+## Biggest Project
+- SCUM DB: https://scum-db.com
+
+## Support My Work
+- Ko-fi: https://ko-fi.com/crashman79
+
 ## Private + Public Repo Stats
 <!--STATS_START-->
 ### Snapshot
