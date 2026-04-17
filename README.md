@@ -14,7 +14,22 @@ I build practical tools across Python, Linux automation, web apps, and desktop w
 
 ## Private + Public Repo Stats
 <!--STATS_START-->
-This section is automatically updated by GitHub Actions.
+### Snapshot
+
+| Metric | Value |
+|---|---:|
+| Total Repos (Owned) | 16 |
+| Public Repos | 5 |
+| Private Repos | 11 |
+| Followers | 1 |
+| Following | 1 |
+| Commit Contributions | 181 |
+| PR Contributions | 1 |
+| Issue Contributions | 3 |
+| Repositories Contributed To | 8 |
+| Private Contribution Events (restricted) | 0 |
+
+_Last updated: 2026-04-17T14:00:54.945Z_
 <!--STATS_END-->
 
 ## GitHub Activity
