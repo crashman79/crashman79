@@ -14,7 +14,7 @@ My largest project: a data platform for SCUM game objects, metadata, and lookup 
 
 #### SCUM DB Pipeline Summary
 - 5-stage pipeline: ingest -> validate -> normalize -> enrich -> publish
-- Uneven script groups per stage: 20+ / 15+ / 25+ / 40+ / 10+
+- Script groups per stage: 20+ / 15+ / 25+ / 40+ / 10+
 - Operational model: automated updates, staged processing, and monitored release flow
 
 ### What I Build
