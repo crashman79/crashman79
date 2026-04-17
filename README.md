@@ -7,10 +7,33 @@ Builder of practical Linux and Python tools for automation, audio workflows, and
 ## Portfolio Highlights
 
 ### SCUM DB
-The largest project in my portfolio: a focused platform for SCUM data and utility workflows.
+The largest project in my portfolio: a database of objects in the PC game SCUM.  Focused on parsing metadata from available game files and displaying this in a useful way to players.
 
 - Live site: https://scum-db.com
 - Focus: data organization, usability, and long-term maintainability
+
+#### SCUM DB: Operations Snapshot
+| Area | Snapshot |
+|---|---|
+| Pipeline stages | 5 stages: ingest -> validate -> normalize -> enrich -> publish |
+| Automation actions | 7+ automated actions per update cycle (checks, build, deploy gates) |
+| Runtime architecture | 3-tier model: edge delivery, app/API layer, data services |
+| Reliability controls | 4 core controls: retries, health checks, job idempotency, alerting |
+| Observability signals | 4 tracked signal groups: latency, errors, throughput, availability |
+
+Behind the scenes, the platform uses staged processing, guarded releases, and monitored background jobs to keep updates consistent and dependable.
+
+#### Pipeline Stages and Utility Script Groups
+
+| Stage | Script group size | Collective operation |
+|---|---|---|
+| Ingest | 20+ scripts | Coordinate source checks, extraction indexing, seed loading, and run orchestration for new game data. |
+| Validate | 15+ scripts | Run integrity checks, schema/relationship guards, confidence validation, and category consistency gates. |
+| Normalize | 25+ scripts | Standardize records into canonical entities, consistent keys, and stable data types across item domains. |
+| Enrich | 40+ scripts | Add relationships, metadata overlays, derived display/search fields, and domain-specific augmentations. |
+| Publish | 10+ scripts | Apply transactional updates, refresh API-facing views, and propagate the latest dataset to user-facing endpoints. |
+
+When a SCUM patch adds or changes items, this staged script flow processes the update end-to-end and publishes the refreshed dataset so API-backed pages and category views reflect the latest data.
 
 ### What I Build
 - Linux automation and systems tooling
