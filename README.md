@@ -34,7 +34,7 @@ Python | Linux | Shell | TypeScript | Web UI | API Integrations
 
 ## Private + Public Repo Stats
 <!--STATS_START-->
-### Snapshot
+### Snapshot — Personal & Project Overview
 
 | Metric | Value |
 |---|---:|
@@ -49,11 +49,22 @@ Python | Linux | Shell | TypeScript | Web UI | API Integrations
 | Repositories Contributed To | 10 |
 | Private Contribution Events (restricted) | 0 |
 
-_Last updated: 2026-09-11T08:08:11.736Z_
-<!--STATS_END-->
+_Last updated: 2026-09-11 — includes scum-db pipeline data alongside personal GitHub metrics_
+
+#### SCUM DB Pipeline Highlights (in this repo)
+- 5-stage pipeline: ingest → validate → normalize → enrich → publish
+- Script groups per stage: 20+ / 15+ / 25+ / 40+ / 10+
+- Operational model: automated updates, staged processing, monitored release flow
 
 ## GitHub Dashboard
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=crashman79&show_icons=true&include_all_commits=true&count_private=true&rank_icon=github)
+
+### Personal Overview
+![Custom Stats](https://img.shields.io/badge/custom-stats-666666?style=for-the-badge)
+
+### GitHub Stats
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=crashman79&show_icons=true&include_all_commits=true&rank_icon=github&count_private=false)
+
+### Top Languages
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=crashman79&layout=compact&langs_count=8)
 
 ## Support
