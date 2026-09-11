@@ -13,9 +13,18 @@ My largest project: a data platform for SCUM game objects, metadata, and lookup 
 - **Focus**: reliable ingestion, clean categorization, and fast player-facing search for the SCUM survival game
 
 #### Pipeline Overview
-- 5-stage pipeline: ingest → validate → normalize → enrich → publish
-- Script groups per stage: 20+ / 15+ / 25+ / 40+ / 10+
-- Operational model: automated updates, staged processing, and monitored release flow
+The SCUM DB pipeline processes game data from extraction through player-facing publication. The modular script-based pipeline (run via `scripts/run_pipeline_v3.py`) consists of several coordinated stages:
+
+- **Seed**: Initialize the items database from extraction output (`seed_validated_items.py`)
+- **Extract**: Pull properties and metadata from game asset files (`extract_properties.py`, `extract_vehicle_specs.py`)
+- **Discover**: Identify and categorize game objects — vehicles, buildables, ammunition, weapons, attachments, deconstruction recipes, and more
+- **Classify**: Assign items to categories (melee/range weapons, clothing, consumables, equipment, materials, books, others, fortifications) using rule-based classification
+- **Enrich**: Add derived data — confidence scores, variant groups, display categories, nutrition/cooking data, medical properties, vehicle part enrichment, and DLC integration
+- **Publish**: Generate search documents, variant mappings, compatibility tables, and make data available via the API and site
+
+Script counts per rough phase: 20+ discovery scripts, 25+ classification scripts, 40+ enrichment scripts, 10+ publish/post-processing scripts. The pipeline uses a dependency DAG (`scripts/utilities/pipeline_dependencies.py`) to ensure proper ordering, with parallel wave execution available in v3.
+
+Operational model: automated updates (driven by the 6-hour game update timer on `sdbext`), staged processing with dependency resolution, and monitored release flow (blue/green deployments via Next.js/Express).
 
 ### What I Build
 
@@ -56,9 +65,10 @@ Python | Linux | Shell | TypeScript | Web UI | API Integrations
 
 ### Project Highlights
 
-- **SCUM DB**: 5-stage data pipeline processing SCUM game objects from extraction through publication
-- Script coverage across ingest, validation, normalization, enrichment, and publish stages
-- Designed for reliable player-facing search and metadata lookup
+- **SCUM DB**: Comprehensive SCUM game data platform — from PAK extraction through player-facing searchable database
+- Pipeline processes 100+ game object categories via modular scripts with dependency DAG orchestration
+- Script coverage across extraction, discovery, classification, enrichment, and publish stages
+- Designed for reliable player-facing search and metadata lookup, with automated 6-hour update cycle
 
 ## Support
 
