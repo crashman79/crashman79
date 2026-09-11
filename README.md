@@ -19,7 +19,7 @@ The workflow covers the full data lifecycle: initializing the items database, ex
 
 Script counts per rough phase: 20+ discovery scripts, 25+ classification scripts, 40+ enrichment scripts, 10+ publish/post-processing scripts. The dependency resolution ensures proper ordering, with parallel wave execution available in v3.
 
-Operational model: automated updates (driven by the 6-hour game update timer on `sdbext`), staged processing with dependency resolution, and monitored release flow.
+Operational model: automated updates, staged processing with dependency resolution, and monitored release flow.
 
 ### What I Build
 
