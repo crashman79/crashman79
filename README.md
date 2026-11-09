@@ -2,26 +2,9 @@
 
 Builder of practical Linux and Python tools for automation, audio workflows, and operational reliability.
 
-[Website](https://crash-landing.net) | [SCUM DB](https://scum-db.com) | [Support on Ko-fi](https://ko-fi.com/crashman79)
+[Website](https://crash-landing.net) | [Support on Ko-fi](https://ko-fi.com/crashman79)
 
-## Portfolio Highlights
-
-### SCUM DB
-My largest project: a data platform for SCUM game objects, metadata, and lookup workflows.
-
-- **Live site**: https://scum-db.com
-- **Focus**: reliable ingestion, clean categorization, and fast player-facing search for the SCUM survival game
-
-#### Pipeline Overview
-The SCUM DB pipeline processes game data from extraction through player-facing publication using a modular script-based pipeline (run via `scripts/run_pipeline_v3.py`). The pipeline uses a dependency DAG to orchestrate script execution across multiple waves of parallel processing.
-
-The workflow covers the full data lifecycle: initializing the items database, extracting properties from game assets, discovering and categorizing game objects, classifying items into types (weapons, clothing, consumables, etc.), enriching with derived data (confidence scores, variant groups, display categories), and publishing results for API and site consumption.
-
-Script counts per rough phase: 20+ discovery scripts, 25+ classification scripts, 40+ enrichment scripts, 10+ publish/post-processing scripts. The dependency resolution ensures proper ordering, with parallel wave execution available in v3.
-
-Operational model: automated updates, staged processing with dependency resolution, and monitored release flow.
-
-### What I Build
+## What I Build
 
 | Area | What I deliver |
 |---|---|
@@ -59,12 +42,12 @@ Python | Linux | Shell | TypeScript | Web UI | API Integrations
 _Last updated: 2026-11-09T08:05:46.139Z_
 <!--STATS_END-->
 
-### Project Highlights
+## Decommissioned
 
-- **SCUM DB**: Comprehensive SCUM game data platform — from PAK extraction through player-facing searchable database
-- Pipeline processes 100+ game object categories via modular scripts with dependency DAG orchestration
-- Script coverage across extraction, discovery, classification, enrichment, and publish stages
-- Designed for reliable player-facing search and metadata lookup, with automated 6-hour update cycle
+SCUM DB (2023-2026) was a fan-made SCUM database and data platform. It was decommissioned in November 2026.
+
+- Final data package and offline viewer: https://scum-db.com
+- Public extractor: https://github.com/crashman79/scum-cue4parse-webp-cli
 
 ## Support
 
