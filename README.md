@@ -44,7 +44,7 @@ _Last updated: 2026-11-09T08:05:46.139Z_
 
 ## Decommissioned
 
-SCUM DB (2023-2026) was a fan-made SCUM database and data platform. It was decommissioned in November 2026.
+SCUM DB was a fan-made SCUM database and data platform. It was decommissioned in November 2026.
 
 - Final data package and offline viewer: https://scum-db.com
 - Public extractor: https://github.com/crashman79/scum-cue4parse-webp-cli
